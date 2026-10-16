@@ -2,7 +2,7 @@
 
 Glyphs 3 的常驻 Python 插件。按住 Command（⌘）点选节点，或框选多个节点，松开鼠标后会选中这些节点所属轮廓的全部节点，包含离曲线控制柄。支持开放路径和闭合轮廓。
 
-**[下载插件 1.0](https://github.com/Zonz-Ly/CommandSelectContours/raw/refs/heads/main/CommandSelectContours.zip)** · 下载后解压，双击插件包安装。
+**[下载插件 1.0](https://github.com/Zonz-Ly/Glyphs-CommandSelectContours/releases/download/1.0/CommandSelectContours.zip)** · 下载后解压，双击插件包安装。
 
 A Glyphs 3 plug-in that expands a Command-click or Command-drag node selection to complete contours, including off-curve handles. Selection expands on mouse release. Toggle it in the Edit menu.
 
