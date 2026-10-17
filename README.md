@@ -22,19 +22,8 @@ If double-clicking does not start installation, copy the entire plug-in bundle t
 - **⌘ + drag-select nodes:** select all nodes on every contour involved.
 - **⌘ + Shift:** retain Glyphs’ normal additive selection behavior, then expand the contours represented in the current selection.
 - Ordinary mouse selection retains the normal Glyphs behavior.
-- **⌘ + Option / Control** does not activate the plug-in, preserving those modifier gestures.
 
 Selection expands after mouse release; behavior during dragging is unchanged. Nodes already selected also participate in the expansion. Components and anchors do not trigger contour expansion. The plug-in changes only the selection, not node coordinates or path structure.
-
-### Verification status
-
-The 1.0.1 code was tested locally in Glyphs 3 with Command-click: all 28 nodes on the clicked node’s contour were selected. It fixes an incorrect canvas class name and hit testing when view transforms are present. Python syntax, the plist, and the official SDK launcher were checked. Drag-selection, background layers, and Glyphs 4 compatibility have not been tested.
-
-Suggested checks in a test font: single-node clicking, drag-selection across two contours, Shift-add selection, off-curve handles, open paths, background layers, ordinary selection, and the menu toggle.
-
-### Credits
-
-The plug-in launcher binary comes from the [official Glyphs SDK](https://github.com/schriftgestalt/GlyphsSDK). See `LICENSE-SDK.txt` for its original license. The plug-in logic is in `Contents/Resources/plugin.py` inside the bundle.
 
 ## 繁體中文
 
@@ -56,19 +45,8 @@ Glyphs 3 的常駐 Python 外掛。按住 Command（⌘）點選節點，或框�
 - **⌘ + 框選節點：** 選取所有涉及輪廓的全部節點。
 - **⌘ + Shift：** 保留 Glyphs 原有的追加選取行為，再擴展目前選取範圍中的輪廓。
 - 一般滑鼠選取維持 Glyphs 原有行為。
-- **⌘ + Option / Control** 不會觸發外掛，以保留組合手勢。
 
 擴展發生在放開滑鼠之後；外掛不改變拖曳中的行為。原先已選取的節點也會參與擴展。組件與錨點不會觸發輪廓擴展。外掛只變更選取範圍，不修改節點座標或路徑結構。
-
-### 驗證狀態
-
-1.0.1 程式碼已在本機 Glyphs 3 中驗證 Command 點選：點選一個節點後，其所屬輪廓的 28 個節點全部選取。已修正錯誤的畫布類別名稱，以及套用視圖變換時的命中偵測。已檢查 Python 語法、plist 與官方 SDK 啟動檔。框選、背景圖層與 Glyphs 4 相容性尚未實測。
-
-建議在測試字型中確認：點選單一節點、跨兩個輪廓框選、Shift 追加選取、控制柄、開放路徑、背景圖層、一般選取與選單開關。
-
-### 來源
-
-外掛啟動二進位檔來自 [Glyphs 官方 SDK](https://github.com/schriftgestalt/GlyphsSDK)，原始授權條款請見 `LICENSE-SDK.txt`。外掛邏輯位於套件內的 `Contents/Resources/plugin.py`。
 
 ## 简体中文
 
@@ -90,16 +68,5 @@ Glyphs 3 的常驻 Python 插件。按住 Command（⌘）点选节点，或框�
 - ⌘ + 框选节点：扩展为所有涉及的完整轮廓。
 - ⌘ + Shift：保留 Glyphs 原有的增选行为，再扩展当前选区中的轮廓。
 - 普通鼠标选择保持 Glyphs 原有行为。
-- ⌘ + Option / Control 不触发插件，以保留组合手势。
 
 扩展发生在松开鼠标之后；插件不改变拖动中的行为。已有选区中的节点也会参与扩展。组件、锚点不作为轮廓扩展。插件只修改选择，不修改节点坐标或路径结构。
-
-### 验证状态
-
-1.0.1 已在本机 Glyphs 3 中验证 Command 点选：一个节点所属轮廓的 28 个节点全部选中。修复了错误的画布类名以及带有视图变换时的命中检测。已检查 Python 语法、plist 和官方 SDK 启动文件。框选、背景层和 Glyphs 4 兼容性尚未实测。
-
-建议在测试字体中确认：单击一个节点、跨两个轮廓框选、Shift 增选、控制柄、开放路径、背景层、普通选择以及菜单开关。
-
-### 来源
-
-插件启动二进制来自 [Glyphs 官方 SDK](https://github.com/schriftgestalt/GlyphsSDK)，原许可见 `LICENSE-SDK.txt`。插件逻辑位于 `Contents/Resources/plugin.py`。
